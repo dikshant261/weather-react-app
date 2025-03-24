@@ -42,14 +42,6 @@ A simple and user-friendly Weather App built using **React** and the **OpenWeath
    ``bash
    REACT_APP_WEATHER_API_KEY=your_api_key_here
 
-🗂️ Project Structure
-/src
-│── components
-│   └── Weather.jsx
-│── App.js
-│── index.js
-│── App.css      
-
 🖼️ Demo
 https://ubiquitous-vacherin-e72d3d.netlify.app/
 
