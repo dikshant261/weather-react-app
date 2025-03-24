@@ -9,6 +9,7 @@ import SnowIcon from "../Assets/snow.png";
 import WindIcon from "../Assets/wind.png";
 import "./weather.css";
 
+
 const Weather = () => {
   const useInput = useRef();
   const [weatherData, setWeatherdata] = useState(null);
@@ -37,7 +38,7 @@ const Weather = () => {
       return;
     }
     try {
-      const apiKey=process.env.apiKey;
+      const apiKey=process.env.REACT_APP_WEATHER_API_KEY;
       const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
       const response = await fetch(URL);
       const data = await response.json();
